@@ -1,0 +1,202 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+.container {
+    background-image: url("scope.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.map {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.D\&D {
+    display: flex;
+    justify-content: flex-end;
+}
+.view1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    flex-grow: 1;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.mapImg {
+    width: 200px;
+    height: 200px;
+    margin: 30px 100px;
+    overflow: hidden;
+    border: 5px solid #2a2a2a;
+    border-radius: 50%;
+}
+.Image {
+    width: 100%;
+    height: 100%;
+}
+.bar {
+    height: calc(100% - 350px);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.magic {
+    width: 20%;
+    height: 40px;
+    border: 5px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, .5);
+}
+.submagic {
+    width: 23%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.health {
+    width: 20%;
+    height: 40px;
+    border: 5px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+.subhealth {
+    width: 78%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.stamina {
+    width: 20%;
+    height: 40px;
+    border: 5px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, .5);
+}
+.substam {
+    width: 47%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+.title {
+    display: flex;
+}
+.space {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+.subTitle {
+    font-size: 2em;
+}
+.title1 {
+    display: flex;
+    justify-content: center;
+}
+#levelTitle {
+
+}
+.view {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    flex-grow: 1;
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button:active {
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.topTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+}
+.Title {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.header {
+    font-size: 1.4em;
+    margin: 3px 0;
+    display: flex;
+}
+.info {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2px 10px;
+}

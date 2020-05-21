@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D&D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="D&Dwebsite.js" defer></script>
+</head>
+<body>
+<div class="title">
+    <div class="space"></div>
+    <div class="subTitle">Jr. D&D Site</div>
+    <div class="view"><a href="view.html" class="view">&times;</a></div>
+</div>
+<div class="title1">
+    <div id="levelTitle" class="subTitle"></div>
+</div>
+<div class="topTitle">Menu</div>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Village')">Village</button>
+    <button class="tablinks" onclick="openCity(event, 'Cores')">Cores</button>
+    <button class="tablinks" onclick="openCity(event, 'CS')">Chaos Shards</button>
+    <button class="tablinks" onclick="openCity(event, 'EA')">Elemental Alignment</button>
+    <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+    <button class="tablinks" onclick="openCity(event, 'CP')">Chaos Points</button>
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Feats')">Feats</button>
+    <button class="tablinks" onclick="openCity(event, 'WP')">Weapon Proficiency</button>
+    <button class="tablinks" onclick="openCity(event, 'class')">Class</button>
+    <button class="tablinks" onclick="openCity(event, 'form')">Forms</button>
+    <button class="tablinks" onclick="openCity(event, 'spell')">Spells</button>
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Garde')">Garde</button>
+    <button class="tablinks" onclick="openCity(event, 'Korvix')">Korvix</button>
+    <button class="tablinks" onclick="openCity(event, 'LOL')">LOL</button>
+    <button class="tablinks" onclick="openCity(event, 'Tamriel')">Tamriel</button>
+    <button class="tablinks" onclick="openCity(event, 'PolGuild')">PolGuild</button>
+    <button class="tablinks" onclick="openCity(event, 'Celestial')">Celestial</button>
+    <button class="tablinks" onclick="openCity(event, 'Law')">Law</button>
+    <button class="tablinks" onclick="openCity(event, 'TheLand')">TheLand</button>
+</div>
+
+<div id="Village" class="tabcontent">
+    <div class="Title">Village</div>
+    <div class="info">None</div>
+</div>
+
+<div id="Cores" class="tabcontent">
+    <div class="Title">Cores</div>
+    <div class="header">How to start a village.</div>
+    <div class="info">None</div>
+</div>
+
+<div id="CS" class="tabcontent">
+    <div class="Title">Chaos Shards</div>
+    <div class="header">???</div>
+</div>
+
+<div id="EA" class="tabcontent">
+    <div class="Title">Elemental Alignment</div>
+    <div class="header">Light</div>
+</div>
+
+<div id="Skills" class="tabcontent">
+    <div class="Title">Skills</div>
+    <div class="header">SP-Skill Points</div>
+    <div id="skill" class="info">5 SP</div>
+    <div class="header">Scry</div>
+    <div class="info">Peer through any reflective surface</div>
+    <div class="info">Tier: 1/3 (10 sp)</div>
+    <div class="header">Scan</div>
+    <div class="info">See someone's stats</div>
+    <div class="info">Tier: 1/3 (10 sp)</div>
+</div>
+
+<div id="CP" class="tabcontent">
+    <div class="Title">Chaos Points</div>
+    <div id="chaosPoints" class="header"></div>
+</div>
+
+<div id="Feats" class="tabcontent">
+    <div class="Title">Feats</div>
+    <div class="header">Write/Read</div>
+    <div class="info">Level: 1/10</div>
+    <div class="header">Psionics</div>
+    <div class="info">Level: 1/10</div>
+    <div class="header">Spot Checks</div>
+    <div class="info">Level: 1/10</div>
+</div>
+
+<div id="WP" class="tabcontent">
+    <div class="Title">Weapon Proficiency</div>
+    <div class="header">22 (% chance to crit)</div>
+        <div class="info">10-19: d4,    20-29: d6,   30-39: d8,   40-49: d10,  50-59: d12,  60+ d20</div>
+        <div class="info">Cast: 50 Shot: 10</div>
+    <div class="header">Sniper</div>
+        <div class="info">0-100: 100%</div>
+        <div class="info">100-1000: 75%</div>
+        <div class="info">1000-2000: 50%</div>
+        <div class="info">2000-3000: 25%</div>
+        <div class="info">3000+: 0%</div>
+</div>
+
+<div id="class" class="tabcontent">
+    <div class="Title">Class</div>
+    <div class="Title">Rogue</div>
+    <div class="header">Stealth</div>
+    <div class="header">Sneak Attack</div>
+        <div class="info">Level: 2</div>
+    <div class="Title">Assassin</div>
+        <div class="info"></div>
+</div>
+
+<div id="form" class="tabcontent">
+    <div class="Title">Form</div>
+        <div class="header">Melee only</div>
+            <div class="info">1 d4 to switch</div>
+        <div class="header">Barrier-
+            <div class="info">Psychological Defense</div>
+        </div>
+        <div class="header">Shell-
+            <div class="info">Physical Defense</div>
+        </div>
+        <div class="header">Tiger-
+            <div class="info">Physical Offense, anti-Physical</div>
+        </div>
+        <div class="header">Dragon-
+            <div class="info">Magical Offense, anti-Magic</div>
+        </div>
+        <div class="header">Sigil-
+            <div class="info">Buff allies, Debuff enemies</div>
+        </div>
+</div>
+
+<div id="spell" class="tabcontent">
+    <div class="Title">Spells</div>
+    <div class="header">Cover</div>
+        <div class="info">Mana - 18 (30-lvl)</div>
+            <div class="info">Redirect all attacks for intended target to self (fight duration)</div>
+    <div class="header">Minor Heal</div>
+        <div class="info">Mana - 5</div>
+            <div class="info">Recharge: d6</div>
+                <div class="info">10% (max health) (one cast per person per fight)</div>
+    <div class="header">Stabilize</div>
+        <div class="info">Mana - 25</div>
+            <div class="info">Just like DnD</div>
+    <div class="header">Light's Fire</div>
+        <div class="info">Mana - 10</div>
+            <div class="info">Illumination</div>
+                <div class="info">Enchant weapon - (fight duration)</div>
+</div>
+
+
+    <div id="Garde" class="tabcontent">
+        <div class="Title">Garde</div>
+        <div class="header">1. Eva -
+            <div class="info">Telekinesis, Earthquake</div>
+        </div>
+        <div class="header">2. Maggie -
+            <div class="info">Telekinesis, Support, (Chaos Dagger)</div>
+        </div>
+        <div class="header">3. Honnu -
+            <div class="info">Telekinesis, Density</div>
+        </div>
+        <div class="header">4. John -
+            <div class="info">Telekinesis, Lumen, Healing, Ximic</div>
+        </div>
+        <div class="header">5. Cody -
+            <div class="info">Telekinesis, Flight, Externa</div>
+        </div>
+        <div class="header">6. Kat (Katrina) -
+            <div class="info">Telekinesis, Invisibilty, Elements, Weather</div>
+        </div>
+        <div class="header">7. Marina -
+            <div class="info">Telekinesis, Nightvision, Underwater Breathing, Healing</div>
+        </div>
+        <div class="header">8. Joseph -
+            <div class="info">Telekinesis, Teleport, Shapeshift</div>
+        </div>
+        <div class="header">9. Lee (Stanley) -
+            <div class="info">Telekinesis, Strong, Gravity, Transfer</div>
+        </div>
+        <div class="header">10. Ella -
+            <div class="info">Telekinesis, Dreynen, Telepathy, Aeturnus</div>
+        </div>
+    </div>
+    <div id="Korvix" class="tabcontent">
+        <div class="Title">Korvix</div>
+        <div class="header">K1 Amoni -
+            <div class="info">Leader, Strong, Clone</div>
+        </div>
+        <div class="header">K2 Borvak -
+            <div class="info"></div>
+        </div>
+        <div class="header">K3 Torvax -
+            <div class="info"></div>
+        </div>
+        <div class="header">K4 Zola -
+            <div class="info">Smart, Shapeshifter, Fast, Possible Traitor, Chaos Seed</div>
+        </div>
+        <div class="header">K5 Katora -
+            <div class="info"></div>
+        </div>
+        <div class="header">K6 Selkie -
+            <div class="info">Fast, See through Illusions, duplicate stats, Possible Traitor, Chaos Seed</div>
+        </div>
+        <div class="header">K7 Zark -
+            <div class="info">Strong</div>
+        </div>
+        <div class="header">K8 Leenri -
+            <div class="info"></div>
+        </div>
+        <div class="header">Braxis -
+            <div class="info">Goblin King</div>
+        </div>
+    </div>
+    <div id="LOL" class="tabcontent">
+        <div class="Title">League Of Legends</div>
+        <div class="header">Lux -
+            <div class="info">Badass Soldier of Political Guild, Demacia</div>
+        </div>
+        <div class="header">Tom -
+            <div class="info">Lux's Father, Deceased</div>
+        </div>
+        <div class="header">Garen -
+            <div class="info">Demacia, Paladin, WK guild</div>
+        </div>
+    </div>
+    <div id="Tamriel" class="tabcontent">
+        <div class="Title">Tamriel</div>
+        <div class="header">Orchid -
+            <div class="info">"Sheriff" of Tamriel</div>
+        </div>
+        <div class="header">Jago -
+            <div class="info">Assassin, works for Orchid</div>
+        </div>
+    </div>
+    <div id="PolGuild" class="tabcontent">
+        <div class="Title">Political Guild</div>
+        <div class="header">Tamira (tammy) -
+            <div class="info">Ella's Mom, Detect Lies, Leader of Political Guild</div>
+        </div>
+        <div class="header">Carl -
+            <div class="info">Ella's Dad, Leader of Political Guild</div>
+        </div>
+    </div>
+    <div id="Celestial" class="tabcontent">
+        <div class="Title">Celestial</div>
+        <div class="header">Arcnon -
+            <div class="info">Angel, Hound Archon (face - dog), Gaurdian (lizzy)</div>
+        </div>
+        <div class="header">Illiel -
+            <div class="info">Demon Lord, Archon, Fallen Angel, FireLands</div>
+        </div>
+    </div>
+    <div id="Law" class="tabcontent">
+        <div class="Title">Law</div>
+        <div class="header">H1 FreakShow -
+            <div class="info">Mage, (Chaos Dagger)</div>
+        </div>
+        <div class="header">H2 Viper -
+            <div class="info">Rogue</div>
+        </div>
+        <div class="header">H3 Striker -
+            <div class="info">Hunter/Ranger, Deceased</div>
+        </div>
+        <div class="header">H4 Jonas -
+            <div class="info">King</div>
+        </div>
+        <div class="header">H5 Firefly -
+            <div class="info">Queen</div>
+        </div>
+    </div>
+    <div id="TheLand" class="tabcontent">
+        <div class="Title">The Land</div>
+        <div class="header">Asako -
+            <div class="info">Protect life, Sprite Mother</div>
+        </div>
+        <div class="header">Rictor -
+            <div class="info">Chaos Seed</div>
+        </div>
+        <div class="header">Scion -
+            <div class="info">Rictor's right hand, sprite</div>
+        </div>
+        <div class="header">Miya -
+            <div class="info">Scion's right hand, sprite</div>
+        </div>
+    </div>
+</body>
+</html>
